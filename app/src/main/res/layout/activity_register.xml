@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".RegisterActivity">
+    tools:context="com.example.simpleeasy.RegisterActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -32,7 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="Login"
+        android:text="Create Account"
         android:textAlignment="center"
         android:textSize="35dp"
         android:textStyle="bold" />
@@ -48,7 +48,7 @@
         app:cardCornerRadius="60dp">
 
         <TextView
-
+            android:id="@+id/txt_loginactivity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"

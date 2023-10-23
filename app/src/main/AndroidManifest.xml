@@ -10,17 +10,23 @@
         android:theme="@style/Theme.SimpleEasy">
         <activity android:name="com.example.simpleeasy.DetailProductActivity2"></activity>
         <activity android:name="com.example.simpleeasy.ProductActivity" />
-        <activity android:name="com.example.simpleeasy.LoginActivity" />
-        <activity android:name="com.example.simpleeasy.RegisterActivity" />
-        <activity android:name="com.example.simpleeasy.OnlineCosmaticActivity" />
-        <activity android:name="com.example.simpleeasy.MainActivity"
-            android:exported="true"
-            >
+        <activity android:name="com.example.simpleeasy.LoginActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name="com.example.simpleeasy.RegisterActivity" />
+        <activity android:name="com.example.simpleeasy.OnlineCosmaticActivity" />
+        <activity android:name="com.example.simpleeasy.MainActivity"
+            android:exported="true"
+            >
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
 
         <meta-data
