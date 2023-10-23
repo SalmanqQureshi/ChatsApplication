@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.simpleeasy.OnlineCosmaticActivity"
+    android:background="#E6ededed">
+    <RelativeLayout
+        android:id="@+id/profile_data_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:id="@+id/profie_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/chelsea_market"
+            android:text="Hello, User"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/profile_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profie_name"
+            android:text="Let's find your fovaurite body care prduct" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/card_design2"
+            android:padding="10dp"
+            android:src="@drawable/_bitcoin_24"
+            android:tint="@color/white" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/list_option"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="60dp"
+        android:background="#6A3A3C9F"
+        android:src="@drawable/menu_24"
+        android:tint="@color/white"
+        android:layout_below="@+id/profile_data_layout"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chipbutton_product_recylerview"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/list_option"
+        android:layout_below="@+id/profile_data_layout"
+        tools:listitem="@layout/product_item_layout"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/product_Item_recylerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chipbutton_product_recylerview"
+        android:layout_toRightOf="@+id/horizantal_realative_layout"
+        tools:listitem="@layout/produc_items_layout"
+        android:layout_marginTop="5dp"/>
+
+    <RelativeLayout
+        android:id="@+id/horizantal_realative_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#99ededed">
+        <TextView
+            android:id="@+id/id_hair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="150dp"
+            android:rotation="270"
+            android:text="Hair" />
+
+        <TextView
+            android:id="@+id/id_fragrance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_hair"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="120dp"
+            android:rotation="270"
+            android:text="Makeup" />
+
+        <TextView
+            android:id="@+id/id_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_fragrance"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="120dp"
+            android:rotation="270"
+            android:text="Face" />
+
+        <TextView
+            android:id="@+id/id_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_face"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="100dp"
+            android:rotation="270"
+            android:text="Body" />
+
+        <ImageView
+            android:id="@+id/imagesearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            android:background="#6A3A3C9F"
+            android:src="@drawable/search_24"
+            android:tint="@color/white" />
+
+    </RelativeLayout>
+</RelativeLayout>
